@@ -27,7 +27,9 @@
               <% if(files){ %>
                     <% files.forEach(function(file) { %>
                         <div class="card card-body mb-3">
-                     
+                            <div>
+                                <p><%=file.metadata.descrption %></p>
+                            </div>
                             <a href="image/<%=file.filename %>"><%=file.filename %></a>
                         </div>
                         <% }) %>
